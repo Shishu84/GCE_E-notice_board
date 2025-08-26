@@ -1,0 +1,88 @@
+/* Import Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+header.bg-primary {
+    background-color: #0d6efd !important; /* A nice, modern blue */
+}
+
+.controls-card {
+    background-color: #ffffff;
+    border: none;
+}
+
+.notice-card {
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 24px;
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.notice-card .card-body {
+    padding: 1.5rem;
+}
+
+.notice-card .card-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.notice-card .card-text {
+    color: #555;
+    line-height: 1.7;
+}
+
+.meta-info {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.attachment-link {
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.attachment-link i {
+    margin-right: 5px;
+}
+
+#category-filters .btn.active {
+    background-color: #0d6efd;
+    color: white;
+}
+/* In assets/css/style.css */
+
+/* --- Dark Mode Styles --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode .notice-card,
+body.dark-mode .controls-card {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+body.dark-mode .card-title {
+    color: #ffffff;
+}
+body.dark-mode .card-text,
+body.dark-mode .meta-info {
+    color: #b0b0b0;
+}
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+body.dark-mode .form-check-input {
+    background-color: #444;
+    border-color: #666;
+}
